@@ -1,8 +1,9 @@
 // we define answers
 // var answers = ["];
 
-               function GenerateAnswer() {
-                responses = [
+            //    function GenerateAnswer() {
+            //     responses = [
+                var answers = [
                   'It is certain',
                   'Without a doubt',
                   'Most likely',
@@ -33,6 +34,26 @@
                "Cannot predict now", 
                "Concentrate and ask again"
                 ];
-                response = responses[Math.floor(Math.random() * responses.length)];
-                document.getElementById('outputDiv').innerHTML = response;
-              }
+                window.onload = function() {
+                    // var eight = document.getElementById("eight");
+                    var answer = document.getElementById("answer");
+                    var eightball = document.getElementById("eight-ball");
+                    var question = document.getElementById("question");
+                    answer.innerText=8
+                    
+                    eightball.addEventListener("click", function() {
+                      if (question.value.length < 1) {
+                        alert('Enter a question!');
+                      } else {
+                        // eight.innerText = "";
+                        var num = Math.floor(Math.random() * Math.floor(answers.length));
+                        answer.innerText = answers[num];
+                      }
+                    });
+                 };  
+            //     response = responses[Math.floor(Math.random() * responses.length)];
+            //     document.getElementById('outputDiv').innerHTML = response;
+            //   }
+            //   if (text.value.length < 5) {
+            //       alert("enter a question!");
+            //   }
