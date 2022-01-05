@@ -1,4 +1,10 @@
-h1 { font-weight: 100; font-size: 2.5em;}
+body {
+  background-image: url('https://s3.amazonaws.com/3ge.shared.assets/things-to-know/subaru/v1/ttk-image-exhaust_emissions_06_02-4.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  
+}
+h1 { font-weight: 100; font-size: 2.5em; color: white;}
     
     .content { 
      width: 600px; 
@@ -8,6 +14,7 @@ h1 { font-weight: 100; font-size: 2.5em;}
      text-align: center; 
      font-family: 'Helvetica Neue', arial; 
      font-weight: 100;
+     color: white;
    }
     
     .eight-ball {
@@ -39,21 +46,27 @@ h1 { font-weight: 100; font-size: 2.5em;}
     .answer {
       text-align: center;
       align-items: center;
-      color: lightblue;
+      color: whitesmoke;
       letter-spacing: 2px;
-      font-size:50px;
+      font-size: xx-large;
       height: auto;
       width: 100%;
+      margin-top: 45%;
+      margin-bottom: 50%;
     }
     
-    .questionbox {
-      margin: 20px;
+    #question {
+      margin-left: 40%;
+      margin-right: 50%;
       padding: 10px;
       width: 400px;
-      font-size:22px;
+      font-size: x-large;
+      text-align: center;
+      
     }
     
     .info {
       font-size: 22px;
+      color: whitesmoke;
     }
     
