@@ -1,17 +1,38 @@
-Math.floor(Math.random() * 4);
-switch ("") {
-    case 1:"try again"
-    break;
-    case 2:"inconclusive"
-    break;
-    case 3: "Maybe"
-    break;
-    case 4:"It could be"
-    break;
-    case 5:"Don't count on it"
-    break;
-    case 6: "You may rely on it"
-    break;
-    case 7:"Reply hazy, try again"
-    break;
-}
+// we define answers
+// var answers = ["];
+
+               function GenerateAnswer() {
+                responses = [
+                  'It is certain',
+                  'Without a doubt',
+                  'Most likely',
+                  'Yes',
+                  'Reply hazy try again',
+                  'Ask again later',
+                  'My reply is no',
+                  'No',
+                  'Very doubtful',
+                 "It is certain", 
+               "It is decidedly so", 
+               "Without a doubt", 
+               "Yes - definitely",
+               "You may rely on it", 
+               "As I see it, yes", 
+               "Most likely", 
+               "Outlook good", 
+               "Yes", 
+               "Signs point to yes",
+               "Don't count on it", 
+               "My reply is no",
+               "My sources say no", 
+               "Outlook not so good",
+               "Very doubtful", 
+               "Reply hazy, try again", 
+               "Ask again later", 
+               "Better not tell you now",
+               "Cannot predict now", 
+               "Concentrate and ask again"
+                ];
+                response = responses[Math.floor(Math.random() * responses.length)];
+                document.getElementById('outputDiv').innerHTML = response;
+              }
